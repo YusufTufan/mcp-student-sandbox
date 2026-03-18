@@ -1,0 +1,88 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+secrets/
+credentials.json
+config/secrets.yml
+aws_keys.json
+
+# API Keys and tokens
+.apikey
+.api_key
+*.key
+*.pem
+*.pfx
+
+# Database credentials
+.db
+*.sql
+.mysql
+postgres_config.yml
+database.yml
+
+# IDE and editor secrets
+.vscode/settings.json
+.idea/misc.xml
+.idea/workspace.xml
+*.swp
+*.swo
+*~
+
+# Compiled and cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+.env
+
+# Package manager
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git-related
+.git/secrets
