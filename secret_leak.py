@@ -11,6 +11,7 @@ import logging
 
 class ConnectionError(Exception):
     """Bağlantı kurma hatası."""
+
     pass
 
 

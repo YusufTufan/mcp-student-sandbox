@@ -14,6 +14,7 @@ EPSILON_FOR_EQUAL_ROOTS = 1e-10
 
 class QuadraticEquationError(Exception):
     """İkinci dereceden denklem çözme hatası."""
+
     pass
 
 
@@ -33,7 +34,10 @@ def validate_coefficients(coefficient_a, coefficient_b, coefficient_c):
         raise QuadraticEquationError(
             "a (x² katsayısı) sıfır olamaz, bu ikinci dereceden denklem olmaz"
         )
-    if not all(isinstance(x, (int, float)) for x in [coefficient_a, coefficient_b, coefficient_c]):
+    if not all(
+        isinstance(x, (int, float))
+        for x in [coefficient_a, coefficient_b, coefficient_c]
+    ):
         raise QuadraticEquationError("Tüm katsayılar sayısal olmalı")
 
 
@@ -70,7 +74,10 @@ def solve_quadratic_equation(coefficient_a, coefficient_b, coefficient_c):
     validate_coefficients(coefficient_a, coefficient_b, coefficient_c)
 
     # Diskriminantı (Δ = b² - 4ac) hesapla
-    discriminant = coefficient_b ** 2 - QUADRATIC_DISCRIMINANT_COEFFICIENT * coefficient_a * coefficient_c
+    discriminant = (
+        coefficient_b**2
+        - QUADRATIC_DISCRIMINANT_COEFFICIENT * coefficient_a * coefficient_c
+    )
 
     # Gerçek kök olmadığını kontrol et
     if discriminant < 0:
